@@ -1,0 +1,224 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: calc(var(--header-height) + 3rem) 0 4rem;
+  overflow: hidden;
+}
+
+.hero__bg {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 80% 60% at 90% 10%, var(--pink-soft) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 50% at 10% 80%, var(--cream-dark) 0%, transparent 50%),
+    linear-gradient(180deg, var(--cream) 0%, var(--white) 100%);
+  z-index: 0;
+}
+
+.hero__layout {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  align-items: center;
+}
+
+.hero__content {
+  max-width: 560px;
+}
+
+.hero__content > * {
+  animation: fadeInUp 0.75s var(--ease-out) both;
+}
+
+.hero__badge {
+  animation-delay: 0.1s;
+  display: inline-block;
+  padding: 0.4rem 1rem;
+  background: var(--white);
+  border: 1px solid var(--pink-soft);
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: var(--pink-deep);
+  margin-bottom: 1.5rem;
+  box-shadow: var(--shadow);
+}
+
+.hero__title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 4.5vw, 3rem);
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+  margin-bottom: 1.25rem;
+  animation-delay: 0.2s;
+}
+
+.hero__subtitle {
+  animation-delay: 0.3s;
+  font-size: clamp(1rem, 2vw, 1.1rem);
+  color: var(--text-muted);
+  line-height: 1.7;
+  margin-bottom: 1.25rem;
+}
+
+.hero__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1.75rem;
+  animation-delay: 0.4s;
+}
+
+.hero__tags span {
+  padding: 0.35rem 0.85rem;
+  background: var(--pink-soft);
+  color: var(--pink-deep);
+  font-size: 0.8rem;
+  font-weight: 600;
+  border-radius: 999px;
+}
+
+.hero__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  animation-delay: 0.5s;
+}
+
+.hero__stats {
+  animation-delay: 0.6s;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1.25rem 1.75rem;
+  background: var(--white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  max-width: fit-content;
+}
+
+.hero__stat strong {
+  display: block;
+  font-size: 1.1rem;
+  color: var(--pink-deep);
+}
+
+.hero__stat span {
+  font-size: 0.82rem;
+  color: var(--text-muted);
+}
+
+.hero__stat-divider {
+  width: 1px;
+  height: 36px;
+  background: var(--cream-dark);
+}
+
+.hero__image-wrap {
+  overflow: hidden;
+  padding: 0;
+  border: 3px solid var(--white);
+  animation: scaleIn 0.85s var(--ease-out) 0.25s both;
+}
+
+.hero__clickable {
+  min-height: 420px;
+}
+
+.hero__clickable img {
+  min-height: 420px;
+  object-fit: cover;
+  object-position: center;
+}
+
+@media (max-width: 900px) {
+  .hero__layout {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .hero__image-wrap {
+    order: -1;
+    max-height: 380px;
+  }
+
+  .hero__clickable,
+  .hero__clickable img {
+    min-height: 280px;
+    max-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    min-height: auto;
+    padding: calc(var(--header-height) + 1.5rem) 0 2.5rem;
+  }
+
+  .hero__title {
+    font-size: clamp(1.55rem, 6vw, 2rem);
+  }
+
+  .hero__subtitle {
+    font-size: 0.95rem;
+  }
+
+  .hero__stats {
+    padding: 1rem 1.25rem;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero__badge {
+    font-size: 0.72rem;
+    padding: 0.35rem 0.75rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero__tags span {
+    font-size: 0.72rem;
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .hero__stats {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    max-width: none;
+    gap: 0.75rem;
+    padding: 1rem;
+  }
+
+  .hero__stat-divider {
+    width: 100%;
+    height: 1px;
+  }
+
+  .hero__image-wrap {
+    max-height: 260px;
+    border-width: 2px;
+  }
+
+  .hero__clickable,
+  .hero__clickable img {
+    min-height: 220px;
+    max-height: 260px;
+  }
+}

@@ -1,0 +1,54 @@
+.scroll-reveal {
+  transition:
+    opacity 0.7s var(--ease-out),
+    transform 0.7s var(--ease-out);
+  transition-delay: var(--reveal-delay, 0ms);
+  opacity: 0;
+  transform: translateY(32px);
+}
+
+.scroll-reveal--visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.scroll-reveal--visible .section-header .section-title {
+  animation: fadeInUp 0.65s var(--ease-out) both;
+}
+
+.scroll-reveal--visible .section-header .section-desc {
+  animation: fadeInUp 0.65s var(--ease-out) 0.1s both;
+}
+
+.scroll-reveal--visible .facility-slider {
+  animation: scaleIn 0.7s var(--ease-out) 0.15s both;
+}
+
+.scroll-reveal--visible .facilities__security {
+  animation: fadeInUp 0.55s var(--ease-out) 0.2s both;
+}
+
+.scroll-reveal--visible .facilities__card,
+.scroll-reveal--visible .image-carousel__slide,
+.scroll-reveal--visible .rooms__card {
+  animation: fadeInUp 0.55s var(--ease-out) both;
+}
+
+.scroll-reveal--visible .facilities__card:nth-child(1) { animation-delay: 0.04s; }
+.scroll-reveal--visible .facilities__card:nth-child(2) { animation-delay: 0.08s; }
+.scroll-reveal--visible .facilities__card:nth-child(3) { animation-delay: 0.12s; }
+.scroll-reveal--visible .facilities__card:nth-child(4) { animation-delay: 0.16s; }
+.scroll-reveal--visible .facilities__card:nth-child(5) { animation-delay: 0.2s; }
+.scroll-reveal--visible .facilities__card:nth-child(6) { animation-delay: 0.24s; }
+.scroll-reveal--visible .facilities__card:nth-child(7) { animation-delay: 0.28s; }
+.scroll-reveal--visible .facilities__card:nth-child(8) { animation-delay: 0.32s; }
+.scroll-reveal--visible .facilities__card:nth-child(9) { animation-delay: 0.36s; }
+.scroll-reveal--visible .facilities__card:nth-child(10) { animation-delay: 0.4s; }
+.scroll-reveal--visible .facilities__card:nth-child(11) { animation-delay: 0.44s; }
+.scroll-reveal--visible .facilities__card:nth-child(12) { animation-delay: 0.48s; }
+.scroll-reveal--visible .facilities__card:nth-child(13) { animation-delay: 0.52s; }
+.scroll-reveal--visible .facilities__card:nth-child(14) { animation-delay: 0.56s; }
+
+.scroll-reveal--visible .image-carousel__slide:nth-child(1) { animation-delay: 0.03s; }
+.scroll-reveal--visible .image-carousel__slide:nth-child(2) { animation-delay: 0.06s; }
+.scroll-reveal--visible .image-carousel__slide:nth-child(3) { animation-delay: 0.09s; }

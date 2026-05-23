@@ -1,0 +1,108 @@
+.facility-slider {
+  max-width: 640px;
+  margin: 0 auto 2.5rem;
+  padding: 0;
+  overflow: hidden;
+}
+
+.facility-slider__viewport {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: var(--cream-dark);
+}
+
+.facility-slider__img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center;
+  background: var(--white);
+  animation: fadeIn 0.45s var(--ease-out);
+}
+
+.facility-slider__arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--pink-deep);
+  font-size: 1.5rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--shadow);
+  transition: background var(--transition), color var(--transition);
+}
+
+.facility-slider__arrow:hover {
+  background: var(--pink-deep);
+  color: var(--white);
+}
+
+.facility-slider__arrow--prev {
+  left: 0.75rem;
+}
+
+.facility-slider__arrow--next {
+  right: 0.75rem;
+}
+
+.facility-slider__caption {
+  padding: 1rem 1.25rem 0.5rem;
+  text-align: center;
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text);
+}
+
+.facility-slider__dots {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0 1rem 1.25rem;
+}
+
+.facility-slider__dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--pink-soft);
+  padding: 0;
+  transition: background var(--transition), transform var(--transition);
+}
+
+.facility-slider__dot--active {
+  background: var(--pink-deep);
+  transform: scale(1.2);
+}
+
+@media (max-width: 480px) {
+  .facility-slider {
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+
+  .facility-slider__viewport {
+    aspect-ratio: 4 / 3;
+  }
+
+  .facility-slider__arrow {
+    width: 44px;
+    height: 44px;
+    font-size: 1.35rem;
+  }
+
+  .facility-slider__caption {
+    font-size: 0.85rem;
+    padding: 0.75rem 1rem 0.35rem;
+  }
+
+  .facility-slider__dot {
+    width: 10px;
+    height: 10px;
+  }
+}
