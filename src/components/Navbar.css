@@ -4,10 +4,11 @@
   left: 0;
   right: 0;
   z-index: 1100;
-  background: rgba(255, 248, 243, 0.92);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid transparent;
+  padding-top: env(safe-area-inset-top, 0px);
+  background: rgba(255, 252, 250, 0.88);
+  backdrop-filter: blur(16px) saturate(1.2);
+  -webkit-backdrop-filter: blur(16px) saturate(1.2);
+  border-bottom: 1px solid rgba(245, 235, 227, 0.6);
   transition:
     background var(--transition),
     border-color var(--transition),
@@ -16,16 +17,16 @@
 }
 
 .navbar--scrolled {
-  background: rgba(255, 255, 255, 0.97);
+  background: rgba(255, 255, 255, 0.96);
   border-bottom-color: var(--cream-dark);
-  box-shadow: var(--shadow);
+  box-shadow: 0 2px 20px rgba(45, 36, 38, 0.06);
 }
 
 .navbar__inner {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: var(--header-bar-height);
+  height: var(--header-height);
 }
 
 .navbar__logo {
@@ -34,26 +35,38 @@
   gap: 0.65rem;
   font-weight: 700;
   font-size: 0.9rem;
-  letter-spacing: 0.04em;
+  letter-spacing: 0.06em;
+  transition: opacity var(--transition);
+}
+
+.navbar__logo:active {
+  opacity: 0.85;
 }
 
 .navbar__logo-icon {
-  width: 40px;
-  height: 40px;
+  width: 42px;
+  height: 42px;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(135deg, var(--pink-deep), var(--pink));
+  background: linear-gradient(145deg, var(--pink-deep) 0%, var(--pink) 100%);
   color: var(--white);
-  border-radius: var(--radius-sm);
-  font-size: 0.75rem;
+  border-radius: 12px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  box-shadow: 0 4px 14px rgba(201, 123, 132, 0.35);
+}
+
+.navbar__logo-text {
+  line-height: 1.2;
 }
 
 .navbar__logo-text span {
   color: var(--pink-deep);
 }
 
-.navbar__nav--desktop {
+.navbar__nav {
   display: flex;
   align-items: center;
   gap: 2rem;
@@ -99,74 +112,43 @@
 .navbar__cta {
   padding: 0.6rem 1.25rem;
   font-size: 0.85rem;
+  white-space: nowrap;
 }
 
-/* Mobile quick links — no hamburger, no overlay blocking scroll */
-.navbar__mobile-strip {
-  display: none;
-}
-
+/* Mobile — logo only, clean minimal header */
 @media (max-width: 900px) {
-  .navbar__inner {
-    padding: 0 0.25rem;
+  .navbar {
+    background: rgba(255, 255, 255, 0.94);
   }
 
-  .navbar__logo-text {
-    font-size: 0.8rem;
+  .navbar--scrolled {
+    box-shadow: 0 1px 0 var(--cream-dark), 0 8px 24px rgba(45, 36, 38, 0.05);
+  }
+
+  .navbar__inner {
+    justify-content: center;
+    height: 56px;
+    padding: 0 0.5rem;
+  }
+
+  .navbar__nav {
+    display: none;
+  }
+
+  .navbar__logo {
+    gap: 0.6rem;
   }
 
   .navbar__logo-icon {
-    width: 36px;
-    height: 36px;
-    font-size: 0.7rem;
+    width: 38px;
+    height: 38px;
+    font-size: 0.72rem;
+    border-radius: 11px;
+    box-shadow: 0 3px 12px rgba(201, 123, 132, 0.3);
   }
 
-  .navbar__nav--desktop {
-    display: none;
-  }
-
-  .navbar__mobile-strip {
-    display: block;
-    border-top: 1px solid var(--cream-dark);
-    padding: 0.35rem 0 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .navbar__mobile-links {
-    display: flex;
-    gap: 0.5rem;
-    padding: 0 0.75rem;
-    overflow-x: auto;
-    overflow-y: hidden;
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: x proximity;
-    scrollbar-width: none;
-    overscroll-behavior-x: contain;
-  }
-
-  .navbar__mobile-links::-webkit-scrollbar {
-    display: none;
-  }
-
-  .navbar__mobile-links a {
-    flex-shrink: 0;
-    scroll-snap-align: start;
-    font-size: 0.8rem;
-    font-weight: 600;
-    color: var(--text-muted);
-    padding: 0.45rem 0.75rem;
-    border-radius: 999px;
-    background: var(--white);
-    border: 1px solid var(--cream-dark);
-    transition:
-      color var(--transition),
-      background var(--transition),
-      border-color var(--transition);
-  }
-
-  .navbar__mobile-links a:active {
-    color: var(--pink-deep);
-    border-color: var(--pink-soft);
-    background: var(--cream);
+  .navbar__logo-text {
+    font-size: 0.82rem;
+    letter-spacing: 0.08em;
   }
 }

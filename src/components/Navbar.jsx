@@ -29,7 +29,7 @@ function Navbar() {
           </span>
         </a>
 
-        <nav className="navbar__nav navbar__nav--desktop" aria-label="Main navigation">
+        <nav className="navbar__nav" aria-label="Main navigation">
           <ul className="navbar__links">
             {links.map((link) => (
               <li key={link.href}>
@@ -42,16 +42,6 @@ function Navbar() {
           </a>
         </nav>
       </div>
-
-      <nav className="navbar__mobile-strip" aria-label="Quick links">
-        <ul className="navbar__mobile-links">
-          {links.map((link) => (
-            <li key={link.href}>
-              <a href={link.href}>{link.label}</a>
-            </li>
-          ))}
-        </ul>
-      </nav>
     </header>
   )
 }

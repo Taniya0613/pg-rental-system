@@ -16,7 +16,6 @@
   --transition: 0.35s var(--ease-out);
   --font-body: 'DM Sans', system-ui, sans-serif;
   --font-display: 'Playfair Display', Georgia, serif;
-  --header-bar-height: 72px;
   --header-height: 72px;
 }
 
