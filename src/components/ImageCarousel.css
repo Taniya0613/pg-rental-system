@@ -58,6 +58,7 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior-x: contain;
+  touch-action: pan-x;
   padding: 0.25rem 0.125rem 1rem;
   scrollbar-width: thin;
   scrollbar-color: var(--pink-soft) transparent;

@@ -39,6 +39,12 @@ export function LightboxProvider({ children }) {
   }, [])
 
   useEffect(() => {
+    return () => {
+      document.body.style.overflow = ''
+    }
+  }, [])
+
+  useEffect(() => {
     if (!state.open) return
 
     const onKey = (e) => {
