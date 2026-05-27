@@ -24,7 +24,7 @@ function Gallery() {
       <div className="container">
         <header className="section-header">
           <span className="section-label">Gallery</span>
-          <h2 className="section-title">Photos of ARDHAYA HOMES</h2>
+          <h2 className="section-title">Photos of ARADHYA HOMES</h2>
           <p className="section-desc">
             Browse by category — swipe on phone or use arrows. Tap any photo for
             full-screen view.

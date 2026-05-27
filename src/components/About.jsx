@@ -11,7 +11,7 @@ function About() {
             <div className="about__image-card card">
               <ClickableImage
                 src="/images/front-sign.png"
-                alt="ARDHAYA HOMES building with To-Let sign for girls"
+                alt="ARADHYA HOMES building with To-Let sign for girls"
                 label="Entrance & Sign"
                 className="about__clickable"
                 images={BUILDING_IMAGES}
@@ -25,9 +25,9 @@ function About() {
           </div>
           <div className="about__content">
             <span className="section-label">About Us</span>
-            <h2 className="section-title">Welcome to ARDHAYA HOMES</h2>
+            <h2 className="section-title">Welcome to ARADHYA HOMES</h2>
             <p className="about__text">
-              ARDHAYA HOMES is a thoughtfully managed girls paying guest accommodation
+              ARADHYA HOMES is a thoughtfully managed girls paying guest accommodation
               located in Sector 22A, Gurgaon. Our modern building offers a safe, clean,
               and comfortable environment for students and working professionals.
             </p>

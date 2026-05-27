@@ -20,7 +20,7 @@ function RoomsPricing() {
           <div className="rooms__photo">
             <ClickableImage
               src="/images/rooms/room-01.png"
-              alt="AC furnished room at ARDHAYA HOMES"
+              alt="AC furnished room at ARADHYA HOMES"
               label="AC Room — Feature Wall & Twin Beds"
               className="rooms__clickable"
               images={ROOM_IMAGES}

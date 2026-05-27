@@ -1,4 +1,4 @@
-export const PG_NAME = 'ARDHAYA HOMES'
+export const PG_NAME = 'ARADHYA HOMES'
 export const LOCATION = 'Sector 22A, Gurgaon'
 
 export const MAP_LAT = 28.504497528076172
@@ -19,7 +19,7 @@ export const CONTACT_EMAIL = '4115taniya@gmail.com'
 export const FACILITY_SLIDES = [
   {
     src: '/images/facilities/facility-punch.png',
-    alt: 'Secure punch card entry system at ARDHAYA HOMES',
+    alt: 'Secure punch card entry system at ARADHYA HOMES',
     label: 'Secure Punch Card Entry System',
   },
   {
@@ -50,11 +50,11 @@ export const FACILITY_SLIDES = [
 ]
 
 export const BUILDING_IMAGES = [
-  { src: '/images/front-main.png', alt: 'ARDHAYA HOMES building front view', label: 'Building Front' },
-  { src: '/images/front-sign.png', alt: 'ARDHAYA HOMES entrance with sign', label: 'Entrance & Sign' },
-  { src: '/images/front-banner.png', alt: 'ARDHAYA HOMES exterior with balcony', label: 'Balcony View' },
-  { src: '/images/front-gate.png', alt: 'ARDHAYA HOMES gate and entrance', label: 'Main Gate' },
-  { src: '/images/front-night.png', alt: 'ARDHAYA HOMES building at night', label: 'Building (Night View)' },
+  { src: '/images/front-main.png', alt: 'ARADHYA HOMES building front view', label: 'Building Front' },
+  { src: '/images/front-sign.png', alt: 'ARADHYA HOMES entrance with sign', label: 'Entrance & Sign' },
+  { src: '/images/front-banner.png', alt: 'ARADHYA HOMES exterior with balcony', label: 'Balcony View' },
+  { src: '/images/front-gate.png', alt: 'ARADHYA HOMES gate and entrance', label: 'Main Gate' },
+  { src: '/images/front-night.png', alt: 'ARADHYA HOMES building at night', label: 'Building (Night View)' },
 ]
 
 export const ROOM_IMAGES = [
@@ -159,7 +159,7 @@ export const COMMON_IMAGES = [
 export const TERRACE_IMAGES = [
   {
     src: '/images/terrace/terrace-01.png',
-    alt: 'Spacious open rooftop terrace at ARDHAYA HOMES',
+    alt: 'Spacious open rooftop terrace at ARADHYA HOMES',
     label: 'Rooftop Terrace — Open Space',
   },
   {
@@ -172,7 +172,7 @@ export const TERRACE_IMAGES = [
 export const SURROUNDINGS_IMAGES = [
   {
     src: '/images/surroundings/surroundings-03.png',
-    alt: 'Street view of ARDHAYA HOMES building entrance and residential lane',
+    alt: 'Street view of ARADHYA HOMES building entrance and residential lane',
     label: 'Street View — PG Entrance & Lane',
   },
   {
@@ -192,7 +192,7 @@ export const SURROUNDINGS_IMAGES = [
   },
   {
     src: '/images/surroundings/surroundings-06.png',
-    alt: 'Lush green park and garden area outside ARDHAYA HOMES',
+    alt: 'Lush green park and garden area outside ARADHYA HOMES',
     label: 'Park View — Lush Green Garden',
   },
 ]

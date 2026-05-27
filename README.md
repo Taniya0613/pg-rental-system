@@ -1,6 +1,6 @@
-# ARDHAYA HOMES — Girls PG Website
+# ARADHYA HOMES — Girls PG Website
 
-Professional landing page for **ARDHAYA HOMES**, a Girls PG in Sector 22A, Gurgaon.
+Professional landing page for **ARADHYA HOMES**, a Girls PG in Sector 22A, Gurgaon.
 
 ## Tech Stack
 

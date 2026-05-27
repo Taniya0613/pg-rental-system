@@ -9,7 +9,7 @@ function MapPlaceholder() {
           <span className="section-label">Location</span>
           <h2 className="section-title">Find Us in Sector 22A</h2>
           <p className="section-desc">
-            ARDHAYA HOMES, Sector 22A, Gurgaon — view our location on the map or get
+            ARADHYA HOMES, Sector 22A, Gurgaon — view our location on the map or get
             directions on Google Maps.
           </p>
         </header>

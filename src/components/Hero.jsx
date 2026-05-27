@@ -13,7 +13,7 @@ function Hero() {
             Safe &amp; Comfortable Girls PG in Sector 22A, Gurgaon
           </h1>
           <p className="hero__subtitle">
-            ARDHAYA HOMES offers AC, fully furnished rooms with a separate washroom,
+            ARADHYA HOMES offers AC, fully furnished rooms with a separate washroom,
             daily cleaning, three meals a day, and Wi-Fi — in Sector 22A with a park
             and a quiet street nearby.
           </p>
@@ -56,7 +56,7 @@ function Hero() {
         <div className="hero__image-wrap card">
           <ClickableImage
             src="/images/front-main.png"
-            alt="ARDHAYA HOMES — Girls PG building in Sector 22A, Gurgaon"
+            alt="ARADHYA HOMES — Girls PG building in Sector 22A, Gurgaon"
             label="Building Front"
             className="hero__clickable"
             images={BUILDING_IMAGES}

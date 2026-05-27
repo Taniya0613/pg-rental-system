@@ -25,7 +25,7 @@ function Navbar() {
         <a href="#home" className="navbar__logo">
           <span className="navbar__logo-icon">AH</span>
           <span className="navbar__logo-text">
-            ARDHAYA <span>HOMES</span>
+            ARADHYA <span>HOMES</span>
           </span>
         </a>
 
